@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<html>
+    <head>
+        <title>Update Review</title>
+        <br>
+        Original Review: {{review.film_title}} {{ review.author }} {{ review.review }} {{ review.rating }}
+        <br>
+    </head>
+    <body>
+        <div class='form'>
+            <form action=''  method='POST'>
+                {{ form.hidden_tag() }}
+
+                {{form.film_title.label }} {{ form.film_title }}
+                <br>
+                {{ form.author.label }} {{ form.author }}
+                <br>
+                {{ form.review.label }} {{ form.review }}
+                <br>
+                {{ form.rating.label }} {{ form.rating }}
+                <br>
+                {{ form.submit }}
+            {{ message }}
+            </form>
+        </div>
+    </body>
+</html>
+
+{% endblock body %}

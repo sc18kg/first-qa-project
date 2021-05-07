@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<h2> Movie Reviews - </h2>
+    {% for review in all_reviews %}
+        
+             <h3>{{ review.author }} {{review.film_title }}</h3>
+            {{ review.review }} {{ review.rating }}
+            <br>
+            {{ review.review_date }}
+            <br>
+            <form action="{{ url_for('update', id=review.id) }}">
+            
+                <input type=submit value="Update">
+            </form>
+            <form action="{{ url_for('delete', id=review.id) }}">
+            
+                <input type=submit value="Delete">
+            </form>
+
+        
+    {% endfor %}
+
+{% endblock body %}
