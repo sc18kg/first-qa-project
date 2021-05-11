@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+   {% for films in all_films %}
+        
+<h2>{{films.title }}</h2>
+<h3>{{ films.description }} </h3>
+{{ films.released_at}} <br> <h3>{{ films.age_rating }}</h3>
+
+<br>
+<form action="{{ url_for('update', id=films.id) }}">
+
+   <input type=submit value="Update">
+</form>
+<form action="{{ url_for('delete', id=films.id) }}">
+
+   <input type=submit value="Delete">
+</form>
+
+{% endfor %}
+
+{% endblock body %}

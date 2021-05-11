@@ -1,11 +1,12 @@
 {% extends 'layout.html' %}
 {% block body %}
 
-<h2> Movie Reviews - </h2>
+<h1> Movie Reviews - </h1>
     {% for review in all_reviews %}
         
-             <h3>{{ review.author }} {{review.film_title }}</h3>
-            {{ review.review }} {{ review.rating }}
+             <h2>{{review.film_title }}</h2>
+             <h3>{{ review.author }} </h3>
+            {{ review.review }} <br> <h3>{{ review.rating }}</h3>
             <br>
             {{ review.review_date }}
             <br>

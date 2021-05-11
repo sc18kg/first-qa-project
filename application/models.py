@@ -4,18 +4,17 @@ from datetime import datetime
 
 
 class Film(db.Model):
-    """Movie of ratings website"""
 
     __tablename__ = "Films"
 
     id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     title = db.Column(db.String(30), nullable=True)
     description = db.Column(db.String(50), nullable =True)
-    released_at = db.Column(db.DateTime, nullable=True)
+    released_at = db.Column(db.String(30), nullable=True)
     age_rating = db.Column(db.Integer, nullable=True)
+    review = db.relationship('Review', backref='film')
 
 class Review(db.Model):
-    """Rating of ratings website."""
 
     __tablename__ = "Review"
 

@@ -5,9 +5,11 @@
     <body>
         <h1>Movie Reviews - {{title }} </h1>
             <a href="{{ url_for('home') }}">Home</a>
-            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('filmlist') }}">List of Films</a>
+            <a href="{{ url_for('addfilm') }}">Add a Film</a>
             <a href="{{ url_for('addreview') }}">Add Review</a>
             <a href="{{ url_for('count') }}">Count</a>
+
             {% block body %}
             {% endblock body%}
     </body>
