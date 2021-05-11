@@ -65,12 +65,17 @@ def update(id):
 
     return render_template("update.html", form=form, title="Update Review", review=review)
 
-@app.route('/delete/<int:id>', methods=["GET", "POST"])
-def delete(id):
+@app.route('/deletereview/<int:id>', methods=["GET", "POST"])
+def deletereview(id):
     reviewtodelete = Review.query.get(id)
+    db.session.delete(reviewtodelete)
+    db.session.commit()
+    return redirect(url_for('home'))
+
+@app.route('/deletefilm/<int:id>', methods=["GET", "POST"])
+def deletefilm(id):
     filmtodelete = Film.query.get(id)
     db.session.delete(filmtodelete)
-    db.session.delete(reviewtodelete)
     db.session.commit()
     return redirect(url_for('home'))
 
