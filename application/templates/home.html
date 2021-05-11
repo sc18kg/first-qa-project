@@ -8,8 +8,10 @@
 
              {% for review in film.review %}
              <br>
-             {{ review.author }} <br>
-            {{ review.review }} <br> {{ review.rating }}
+             {{ review.review }} <br>
+             <br>
+             Published by: {{ review.author }}
+              <br> Score: {{ review.rating }} /10
             <br>
             {{ review.review_date }}
             <br>

@@ -4,8 +4,9 @@
    {% for films in all_films %}
         
 <h2>{{films.title }}</h2>
-{{ films.description }} <br>
-{{ films.released_at}} <br> {{ films.age_rating }}
+
+Film Desciption: {{ films.description }} <br>
+Release Date: {{ films.released_at}} <br> Age Rating: {{ films.age_rating }}
 
 <br>
 <form action="{{ url_for('update', id=films.id) }}">

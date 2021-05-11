@@ -8,7 +8,7 @@ class AddReview(FlaskForm):
     author = StringField("Reviewee Name:")
     review = StringField("Review:")
     rating = StringField("What was your rating /10:")
-    submit = SubmitField("Submit Task")
+    submit = SubmitField("Add Review")
 
 class AddFilm(FlaskForm):
 
