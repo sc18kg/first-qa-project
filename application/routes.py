@@ -10,8 +10,9 @@ from application.forms import AddReview, AddFilm
 @app.route('/home', methods=['GET','POST'])
 def home():
     all_reviews = Review.query.all()
+    all_film = Film.query.all()
     print(all_reviews)
-    return render_template('home.html',  title="Home", all_reviews=all_reviews)
+    return render_template('home.html',  title="Home", all_reviews=all_reviews, all_film=all_film)
 
 @app.route('/addfilm', methods=['GET', 'POST'])
 def addfilm():
@@ -34,11 +35,11 @@ def addfilm():
 @app.route('/addreview', methods=['GET','POST'])
 def addreview():
     form = AddReview()
-    form.film_title.choices = [(title.title) for title in Film.query.all()]
+    form.film_title.choices = [(film.id, film.title) for film in Film.query.all()]
     if request.method == 'POST':
         if form.validate_on_submit():
             new_review = Review(
-                film_title = form.film_title.data,
+                film_id = form.film_title.data,
                 author = form.author.data,
                 review = form.review.data,
                 rating = form.rating.data
@@ -52,6 +53,7 @@ def addreview():
 @app.route("/update/<int:id>", methods=["GET", "POST"])
 def update(id):
     form = AddReview()
+    form.film_title.choices = [(title.title) for title in Film.query.all()]
     review = Review.query.filter_by(id=id).first()
     if request.method == "POST":
         review.film_title = form.film_title.data
@@ -66,7 +68,8 @@ def update(id):
 @app.route('/delete/<int:id>', methods=["GET", "POST"])
 def delete(id):
     reviewtodelete = Review.query.get(id)
-    
+    filmtodelete = Film.query.get(id)
+    db.session.delete(filmtodelete)
     db.session.delete(reviewtodelete)
     db.session.commit()
     return redirect(url_for('home'))
@@ -80,5 +83,6 @@ def filmlist():
 @app.route('/count', methods=["GET", "POST"])
 def count():
     number_of_reviews = Review.query.count()
+    print(number_of_reviews)
     db.session.commit()
-    return render_template("count.html", title="Count")
+    return render_template("count.html", title="Count", number_of_reviews=number_of_reviews)

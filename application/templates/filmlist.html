@@ -1,11 +1,11 @@
 {% extends 'layout.html' %}
 {% block body %}
-
+<h1> List of Films - </h1>
    {% for films in all_films %}
         
 <h2>{{films.title }}</h2>
-<h3>{{ films.description }} </h3>
-{{ films.released_at}} <br> <h3>{{ films.age_rating }}</h3>
+{{ films.description }} <br>
+{{ films.released_at}} <br> {{ films.age_rating }}
 
 <br>
 <form action="{{ url_for('update', id=films.id) }}">
