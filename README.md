@@ -1,5 +1,5 @@
 # Movie Review Website
-Contents:
+Contents
 
 Objective 
 
@@ -18,6 +18,8 @@ Project Tracking
 Testing
 
 Final Application Front-End
+
+
 
 Objective
 To create a CRUD application with utilisation of supporting tools,
