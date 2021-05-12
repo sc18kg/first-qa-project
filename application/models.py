@@ -11,7 +11,7 @@ class Film(db.Model):
     title = db.Column(db.String(30), nullable=True)
     description = db.Column(db.String(50), nullable =True)
     released_at = db.Column(db.String(30), nullable=True)
-    age_rating = db.Column(db.Integer, nullable=True)
+    age_rating = db.Column(db.String(3), nullable=True)
     review = db.relationship('Review', backref='film', passive_deletes=True)
 
 class Review(db.Model):

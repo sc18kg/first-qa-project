@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<html>
+    <head>
+        <title>Update Film</title>
+        <br>
+        Original Film: {{film.title}} {{ film.description }} {{ film.released_at }} {{ film.age_rating }}
+        <br>
+    </head>
+    <body>
+        <div class='form'>
+            <form action=''  method='POST'>
+                {{ form.hidden_tag() }}
+
+                {{form.title.label }} {{ form.title }}
+                <br>
+                {{ form.description.label }} {{ form.description }}
+                <br>
+                {{ form.released_at.label }} {{ form.released_at }}
+                <br>
+                {{ form.age_rating.label }} {{ form.age_rating }}
+                <br>
+                {{ form.submit }}
+            {{ message }}
+            </form>
+        </div>
+    </body>
+</html>
+
+{% endblock body %}

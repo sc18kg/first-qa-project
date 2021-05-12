@@ -26,9 +26,9 @@ def addfilm():
                 age_rating = form.age_rating.data
             )
 
-        db.session.add(new_film)
-        db.session.commit()
-        return redirect(url_for("home"))
+            db.session.add(new_film)
+            db.session.commit()
+            return redirect(url_for("home"))
     return render_template('addfilm.html', title="Add a Film", form=form)
 
 
@@ -45,9 +45,9 @@ def addreview():
                 rating = form.rating.data
             )
 
-        db.session.add(new_review)
-        db.session.commit()
-        return redirect(url_for("home"))
+            db.session.add(new_review)
+            db.session.commit()
+            return redirect(url_for("home"))
     return render_template('add_review.html', title='Add a Review', form=form)
 
 @app.route("/update/<int:id>", methods=["GET", "POST"])
@@ -64,6 +64,20 @@ def update(id):
         return redirect(url_for("home"))
 
     return render_template("update.html", form=form, title="Update Review", review=review)
+
+@app.route("/updatefilm/<int:id>", methods=["GET", "POST"])
+def updatefilm(id):
+    form = AddFilm()
+    film = Film.query.filter_by(id=id).first()
+    if request.method == "POST":
+        film.title = form.title.data
+        film.decription = form.description.data
+        film.released_at = form.released_at.data
+        film.age_rating = form.age_rating.data
+        db.session.commit()
+        return redirect(url_for("home"))
+
+    return render_template("updatefilm.html", form=form, title="Update Film", film=film)
 
 @app.route('/deletereview/<int:id>', methods=["GET", "POST"])
 def deletereview(id):

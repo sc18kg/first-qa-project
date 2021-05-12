@@ -9,7 +9,7 @@ Film Desciption: {{ films.description }} <br>
 Release Date: {{ films.released_at}} <br> Age Rating: {{ films.age_rating }}
 
 <br>
-<form action="{{ url_for('update', id=films.id) }}">
+<form action="{{ url_for('updatefilm', id=films.id) }}">
 
    <input type=submit value="Update">
 </form>
