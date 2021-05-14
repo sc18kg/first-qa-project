@@ -4,7 +4,8 @@ from wtforms.validators import DataRequired, Length, ValidationError
 
 class AddReview(FlaskForm):
     
-    film_title = SelectField("Film Title:",choices=[])
+    film_title = SelectField("Film Title:",choices=[],
+        validators=[ Length(min=1, message="The film title field can't be empty!")])
     author = StringField("Reviewee Name:")
     review = StringField("Review:")
     rating = StringField("What was your rating /10:")

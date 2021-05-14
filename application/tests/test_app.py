@@ -9,7 +9,8 @@ from os import getenv
 class TestBase(TestCase):
 
     def create_app(self):
-        app.config.update(SQLALCHEMY_DATABASE_URI= "sqlite:///data.db",  # getenv('DATABASE_URI'),
+ #       app.config.update(SQLALCHEMY_DATABASE_URI= "sqlite:///data.db"
+        app.config.update(SQLALCHEMY_DATABASE_URI= getenv('DATABASE_URI'),
                 SECRET_KEY=getenv('SECRET_KEY'),
                 DEBUG=True,
                 WTF_CSRF_ENABLED=False

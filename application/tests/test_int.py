@@ -26,10 +26,10 @@ class TestBase(LiveServerTestCase):
     def setUp(self):
         """Setup the test driver and create test users"""
         print("--------------------------NEXT-TEST----------------------------------------------")
+
         chrome_options = Options()
-        chrome_options.binary_location = "/usr/bin/chromium-browser"
         chrome_options.add_argument("--headless")
-        self.driver = webdriver.Chrome(executable_path="/home/kieron/chromedriver", chrome_options=chrome_options)
+        self.driver = webdriver.Chrome(options=chrome_options)
         self.driver.get("http://localhost:5000")
         db.session.commit()
         db.drop_all()
@@ -43,27 +43,32 @@ class TestBase(LiveServerTestCase):
         response = urlopen("http://localhost:5000")
         self.assertEqual(response.code, 200)
 
+
 class TestAddfilm(TestBase):
 
     def test_addfilm(self):
 
         # Click add film menu link
-        self.driver.find_element_by_xpath("<xpath for Register button in nav bar>").click()
+        self.driver.find_element_by_xpath("/html/body/a[3]").click()
         time.sleep(1)
 
         # Fill in the form for adding a film
-        self.driver.find_element_by_xpath('<xpath for film title>').send_keys('The Incredibles')
-        self.driver.find_element_by_xpath('<xpath for description>').send_keys(
+        self.driver.find_element_by_xpath('//*[@id="title"]').send_keys('The Incredibles')
+        self.driver.find_element_by_xpath('//*[@id="description"]').send_keys(
             'Super hero family who fight crime')
-        self.driver.find_element_by_xpath('<xpath for released_at>').send_keys(
+        self.driver.find_element_by_xpath('//*[@id="released_at"]').send_keys(
             '2006')
-        self.driver.find_element_by_xpath('<xpath for age rating>').send_keys(
+        self.driver.find_element_by_xpath('//*[@id="age_rating"]').send_keys(
             'U')
-        self.driver.find_element_by_xpath('<xpath for add film button>').click()
+        self.driver.find_element_by_xpath('//*[@id="submit"]').click()
         time.sleep(1)
 
         # Assert that browser redirects to film list page
-        assert url_for('filmlist') in self.driver.current_url
+        assert url_for('home') in self.driver.current_url
+
+
+
+
 
 if __name__ == '__main__':
     unittest.main(port=5000)
