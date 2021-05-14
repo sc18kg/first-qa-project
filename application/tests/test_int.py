@@ -1,5 +1,3 @@
-import unittest
-import time
 from flask import url_for
 from urllib.request import urlopen
 
@@ -10,35 +8,25 @@ from selenium.webdriver.chrome.options import Options
 from application import app, db 
 from application.models import Film, Review
 
-# Set test variables for test admin user
-test_admin_first_name = "admin"
-test_admin_last_name = "admin"
-test_admin_email = "admin@email.com"
-test_admin_password = "admin2020"
-
 class TestBase(LiveServerTestCase):
 
     def create_app(self):
-        app.config['SQLALCHEMY_DATABASE_URI'] = str(getenv('DATABASE_URI'))
+        app.config['SQLALCHEMY_DATABASE_URI'] = getenv('DATABASE_URI')
         app.config['SECRET_KEY'] = getenv('SECRET_KEY')
         return app
 
     def setUp(self):
         """Setup the test driver and create test users"""
-        print("--------------------------NEXT-TEST----------------------------------------------")
-
+        db.create_all()
         chrome_options = Options()
         chrome_options.add_argument("--headless")
         self.driver = webdriver.Chrome(options=chrome_options)
         self.driver.get("http://localhost:5000")
-        db.session.commit()
-        db.drop_all()
-        db.create_all()
+
 
     def tearDown(self):
         self.driver.quit()
-        print("--------------------------END-OF-TEST----------------------------------------------\n\n\n-------------------------UNIT-AND-SELENIUM-TESTS----------------------------------------------")
-
+        db.drop_all()
     def test_server_is_up_and_running(self):
         response = urlopen("http://localhost:5000")
         self.assertEqual(response.code, 200)
@@ -50,7 +38,7 @@ class TestAddfilm(TestBase):
 
         # Click add film menu link
         self.driver.find_element_by_xpath("/html/body/a[3]").click()
-        time.sleep(1)
+
 
         # Fill in the form for adding a film
         self.driver.find_element_by_xpath('//*[@id="title"]').send_keys('The Incredibles')
@@ -61,14 +49,10 @@ class TestAddfilm(TestBase):
         self.driver.find_element_by_xpath('//*[@id="age_rating"]').send_keys(
             'U')
         self.driver.find_element_by_xpath('//*[@id="submit"]').click()
-        time.sleep(1)
+
 
         # Assert that browser redirects to film list page
         assert url_for('home') in self.driver.current_url
 
 
 
-
-
-if __name__ == '__main__':
-    unittest.main(port=5000)
