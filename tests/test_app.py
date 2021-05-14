@@ -44,31 +44,33 @@ class TestViews(TestBase):
         response = self.client.get(url_for('addfilm'))
         self.assertEqual(response.status_code, 200)
 
-    def test_home_get(self):
+    def test_addreview_get(self):
         response = self.client.get(url_for('addreview'))
         self.assertEqual(response.status_code, 200)
 
-    def test_home_get(self):
+    def test_update_get(self):
         response = self.client.get(url_for('update', id=1))
         self.assertEqual(response.status_code, 200)
 
-    def test_home_get(self):
+    def test_updatefilm_get(self):
         response = self.client.get(url_for('updatefilm', id=1))
         self.assertEqual(response.status_code, 200)
 
-    def test_home_get(self):
-        response = self.client.get(url_for('deletereview', id=1))
+    def test_deletereview_get(self):
+        response = self.client.get(url_for('deletereview', id=1),
+        follow_redirects=True)
         self.assertEqual(response.status_code, 200)
 
-    def test_home_get(self):
-        response = self.client.get(url_for('deletefilm', id=1))
+    def test_datafilm_get(self):
+        response = self.client.get(url_for('deletefilm', id=1),
+        follow_redirects=True)
         self.assertEqual(response.status_code, 200)
 
-    def test_home_get(self):
+    def test_filmlist_get(self):
         response = self.client.get(url_for('filmlist'))
         self.assertEqual(response.status_code, 200)
 
-    def test_home_get(self):
+    def test_count_get(self):
         response = self.client.get(url_for('count'))
         self.assertEqual(response.status_code, 200)
 
@@ -80,7 +82,8 @@ class TestAdd(TestBase):
             data = dict(
 		        title='Marley and Me',
 		        description='Film about a man and his best friend',
-		        released_at='2006'
+		        released_at='2006',
+                age_rating='12'
             ),
             follow_redirects=True
         )
