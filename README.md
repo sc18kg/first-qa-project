@@ -7,6 +7,7 @@
 * [Architecture](#Architecture)
 * [CI Pipeline](#CI-Pipeline)
 * [Project Tracking](#Project-Tracking)
+* [Continuous Intergration](#Continuous-intergration)
 * [Testing](#Testing)
 * [Final Application - Front End](#Final-Application--Front-End)
 
@@ -61,10 +62,12 @@ Here is an updated version where I have highlighted the rows which I added later
 ## Architecture
 
 Initially I came up with an architecture which I believed would be fit for purpose for the application
-I build an ERD diagram to show the two databases which I am using and also the relationship between them.
+I build an ERD diagram to show the two databases which I am using and also the relationship between them. I have a 
+one and only one to many relationship between the databases. This is due to a film can have many reviews however each review is only
+linked with the one specific film.
 ![oldERD](https://i.imgur.com/tOijCxW.png)  
 Again during the building stage I realised I had not covered everything I would like or need to include in my application so
-I created a new one to reflect the changes.
+I created a new one to reflect the changes I had made which was to just feature more fields but kept the relationship the same.  
 ![newERD](https://i.imgur.com/bvU1Yih.jpg)
 
 ## CI Pipeline
@@ -87,10 +90,38 @@ From the story points I created a burn-down chart which helps visualise the effo
 ideal burn-out to ensure a steady work flow and reduce heavy loads at certain times in the application.
 (Insert Burnout)
 
+## Continuous Intergration
+
+I have used CI as its usually paired alongside agile software development which is the method for this project. The main focus of the CI is to automate the testing process, from using a webhook I have enabled the tests which I have written to be performed every time an update is pushed to the git repository as Jenkins fetches this information and runs both the intergration and unit tests. Below I have insert the instructions that are used to input for the Jenkins to run:  
+# Jenkins Build Script
+```
+sudo apt-get update
+sudo apt-get install python3 python3-venv python3-pip chromium-browser wget unzip -y
+
+version=$(curl -s https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$(chromium-browser --version | grep -oP 'Chromium \K\d+'))
+wget https://chromedriver.storage.googleapis.com/${version}/chromedriver_linux64.zip
+sudo unzip chromedriver_linux64.zip -d /usr/bin
+rm chromedriver_linux64.zip
+
+python3 -m venv venv
+source venv/bin/activate
+
+pip3 install -r requirements.txt
+
+export DATABASE_URI=mysql+pymysql://root:jasper123@10.92.224.3/project_db
+export SECRET_KEY=qwertyuioplkjhgfdsazxcvbnm
+
+python3 -m pytest --cov=application --disable-warnings
+```
+
 ## Testing
-For testing I used a range of unit tests but also selinium
+#Unit Tests
+for the unit tests, this works by testing against each function I have and using assertions checks that the function is returning the correct or expected results
+As you can see from the image below, I have reached 100% coverage meaning every function has been tested.  
+#Intergration Tests
+For the intergration tests, I used selenium which is a driver used to simulate user input. For my application, I tested adding a new film to the database
+I had selenium enter data and and clicking buttons using their xPath which was then checked for the correct input. As you can see from the tests I have passed
+all 18, this number is refering to both the Unit and Intergration tests.
 ![unit](https://i.imgur.com/L4cj1me.png)
-```
-Codehere
-```
+
 ## Final Application Front-End
