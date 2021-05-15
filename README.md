@@ -49,7 +49,7 @@ Feature-Branch model which will subsequently be built through a CI
 server and deployed to a cloud-based virtual machine.  
 
 ## Approach
-I have created an application which adheres to the objective.
+I have created an application which adheres to the objective.  
 **Create:** You are able to create Films and Reviews.  
 **Read:** You are able to view existing films and reviews that are input onto the application.  
 **Update:** You are able to upade the existing films on the application and also the reviews.  
