@@ -52,27 +52,26 @@ I have created an application which adheres to the objective.
 ## Risk Assesment
 
 Prior to building the application I had completed a risk assesment for all the items which I deemed as
-a risk for the project
-(insert here)
+a risk for the project  
 Upon reflection I have included a few more items which I have discovered from using various tools building the application
-Here is an updated version:
-(insert new Risk Assesment)
+Here is an updated version where I have highlighted the rows which I added later down the line.
+![Risk Assesment](https://imgur.com/FQQSALK)
 [Link to my Risk Assesment](https://docs.google.com/spreadsheets/d/139uNft5K6sNDZgaGhPrtIWHvzJF40PCcAND5tNtLiuY/edit#gid=0)
 
 ## Architecture
 
 Initially I came up with an architecture which I believed would be fit for purpose for the application
 I build an ERD diagram to show the two databases which I am using and also the relationship between them.
-(insert old ERD)
+![old ERD](https://imgur.com/vSoPKsd)  
 Again during the building stage I realised I had not covered everything I would like or need to include in my application so
 I created a new one to reflect the changes.
-(insert new ERD)
+![new ERD](https://imgur.com/hQfXZ89)
 
 ## CI Pipeline
 CI is short for Continuous Intergration and is a software development practice. Its a runnable specification of the steps that any developer would need to
 produce a new version of a software product which is autoamated once set-up. Please find below the image which I have created which covers each the deveolpment
 and deploying of my application. I have chosen the best fit services for my application for efficent and rapid deveopment and testing.
-(Insert CI Pipeline)
+![CI Pipeline](https://imgur.com/286GtpL)
 
 ## Project Tracking
 
@@ -81,7 +80,7 @@ I have created a Trello board which features all the tasks which I had to comple
 I have used MoSCoW techique (Must Have, Should Have, Could Have, Won't Have this time) to prioritisation the tasks for my application I have colour coded the
 user stories, use cases and tasks to show this, green being a must, yellow a should, orange a could and red being wont. I also used story points to estimate
 the effort for each task.
-
+![Trello](https://imgur.com/AS88F4i)
 [Link to my Trello](https://trello.com/b/Sc9YjKgM/qa-project)
 
 From the story points I created a burn-down chart which helps visualise the effort for a spreint and show the remaining effort this needs to be as close to the
