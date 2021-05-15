@@ -126,9 +126,27 @@ I had selenium enter data and and clicking buttons using their xPath which was t
 all 18, this number is refering to both the Unit and Intergration tests.
 ![unit](https://i.imgur.com/L4cj1me.png)
 
-## Final Application Front-End
-# Home
-# Film list 
-# Add Review
-# Add Film
-# Count
+# Final Application Front-End
+I wanted to keep a consistent feel throughout the whole website so this means a stationary menu bar is situated under the page title. I have included
+screenshots of each seperate page and filled in some example data to show the functionality. I have kept the layout simple and clear to avoid any confusion when submitting data.
+## Home
+For the homepage, I have a list of films and also reviews visable even if the film does not currently have a review the title is shown so users are able to see the added films in the database as you can only review a film once its been created and added.
+![home](https://i.imgur.com/xOqGv9r.png)
+## Film list
+The film list features a breakdown of each film and its attached information, there is also both update and delete buttons which allows users to edit the submitted films and also delete them.
+![films](https://i.imgur.com/uQNk94j.png)
+## Add Review
+The add a review page features a drop down menu selection box which is populated with the films that have been stored in the database.
+![addreview](https://i.imgur.com/s6zP1Jx.png)
+## Update Review
+The update review page is accessible from the homepage once a review has been submitted this allows for users to update their review if they have errors or a change of mind for the review submitted.
+![upreview](https://i.imgur.com/cHPd0vz.png)
+## Add Film
+The add film page is accessible from the menu bar, This is required as there would be no reviews if there were no films. This page also features a selection box for the different age ratings for the films to stop incorrect data being submitted.
+![addfilm](https://i.imgur.com/UCN6kEg.png)
+## Update Film
+The update film page is accessed through the film list as there is a button for updating this information, It shows the previously entered information at the top so you are aware what was written prior.
+![upfilm](https://i.imgur.com/IyRpTZk.png)
+## Count
+Count page returns the number of reviews currently in the database.
+![count](https://i.imgur.com/mtkJe2O.png)
