@@ -23,31 +23,31 @@ covered during training.
 A Trello board (or equivalent Kanban board tech) with full expansion
 on user stories, use cases and tasks needed to complete the project.
 It could also provide a record of any issues or risks that you faced
-creating your project.
+creating your project.  
 A relational database used to store data persistently for the
 project, this database needs to have at least 2 tables in it, to
 demonstrate your understanding, you are also required to model a
-relationship.
+relationship.  
 Clear Documentation from a design phase describing the architecture
 you will use for you project as well as a detailed Risk Assessment.
 A functional CRUD application created in Python, following best
 practices and design principles, that meets the requirements set on
-your Kanban Board
+your Kanban Board  
 Fully designed test suites for the application you are creating, as
 well as automated tests for validation of the application. You must
 provide high test coverage in your backend and provide consistent
-reports and evidence to support a TDD approach.
-A functioning front-end website and integrated API's, using Flask.
+reports and evidence to support a TDD approach.  
+A functioning front-end website and integrated API's, using Flask.  
 Code fully integrated into a Version Control System using the
 Feature-Branch model which will subsequently be built through a CI
-server and deployed to a cloud-based virtual machine.
+server and deployed to a cloud-based virtual machine.  
 
 ## Approach
 I have created an application which adheres to the objective.
-Create: You are able to create Films and Reviews. 
-Read: You are able to view existing films and reviews that are input onto the application.
-Update: You are able to upade the existing films on the application and also the reviews.
-Delete: You are able to delete both your own reviews and also the films entered in the application.
+Create: You are able to create Films and Reviews.  
+Read: You are able to view existing films and reviews that are input onto the application.  
+Update: You are able to upade the existing films on the application and also the reviews.  
+Delete: You are able to delete both your own reviews and also the films entered in the application.  
 
 ## Risk Assesment
 
