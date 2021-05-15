@@ -71,7 +71,7 @@ I created a new one to reflect the changes.
 CI is short for Continuous Intergration and is a software development practice. Its a runnable specification of the steps that any developer would need to
 produce a new version of a software product which is autoamated once set-up. Please find below the image which I have created which covers each the deveolpment
 and deploying of my application. I have chosen the best fit services for my application for efficent and rapid deveopment and testing.
-![CI Pipeline](https://imgur.com/286GtpL)
+![CI Pipeline](https://imgur.com/a/7w54Qzl)
 
 ## Project Tracking
 
