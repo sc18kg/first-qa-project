@@ -62,16 +62,16 @@ Here is an updated version where I have highlighted the rows which I added later
 
 Initially I came up with an architecture which I believed would be fit for purpose for the application
 I build an ERD diagram to show the two databases which I am using and also the relationship between them.
-![old ERD](https://imgur.com/vSoPKsd)  
+![oldERD](https://imgur.com/vSoPKsd)  
 Again during the building stage I realised I had not covered everything I would like or need to include in my application so
 I created a new one to reflect the changes.
-![new ERD](https://imgur.com/hQfXZ89)
+![newERD](https://imgur.com/hQfXZ89)
 
 ## CI Pipeline
 CI is short for Continuous Intergration and is a software development practice. Its a runnable specification of the steps that any developer would need to
 produce a new version of a software product which is autoamated once set-up. Please find below the image which I have created which covers each the deveolpment
 and deploying of my application. I have chosen the best fit services for my application for efficent and rapid deveopment and testing.
-![CI Pipeline](https://imgur.com/a/7w54Qzl)
+![CIPipeline](https://imgur.com/286GtpL)
 
 ## Project Tracking
 
