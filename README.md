@@ -9,7 +9,7 @@
 * [Project Tracking](#Project-Tracking)
 * [Continuous Intergration](#Continuous-intergration)
 * [Testing](#Testing)
-* [Final Application - Front End](#Final-Application---Front-End)
+* [Final Application-Front End](#Final-Application-Front-End)
 * [Future Improvements](#Future-Improvements)
 
 
