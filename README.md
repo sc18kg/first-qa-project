@@ -55,17 +55,17 @@ Prior to building the application I had completed a risk assesment for all the i
 a risk for the project  
 Upon reflection I have included a few more items which I have discovered from using various tools building the application
 Here is an updated version where I have highlighted the rows which I added later down the line.
-![Risk Assesment](https://imgur.com/FQQSALK)
+![Risk Assesment](https://i.imgur.com/rmNs94Y.png)
 [Link to my Risk Assesment](https://docs.google.com/spreadsheets/d/139uNft5K6sNDZgaGhPrtIWHvzJF40PCcAND5tNtLiuY/edit#gid=0)
 
 ## Architecture
 
 Initially I came up with an architecture which I believed would be fit for purpose for the application
 I build an ERD diagram to show the two databases which I am using and also the relationship between them.
-![oldERD](https://imgur.com/vSoPKsd)  
+![oldERD](https://i.imgur.com/tOijCxW.png)  
 Again during the building stage I realised I had not covered everything I would like or need to include in my application so
 I created a new one to reflect the changes.
-![newERD](https://imgur.com/hQfXZ89)
+![newERD](https://i.imgur.com/bvU1Yih.jpg)
 
 ## CI Pipeline
 CI is short for Continuous Intergration and is a software development practice. Its a runnable specification of the steps that any developer would need to
@@ -80,7 +80,7 @@ I have created a Trello board which features all the tasks which I had to comple
 I have used MoSCoW techique (Must Have, Should Have, Could Have, Won't Have this time) to prioritisation the tasks for my application I have colour coded the
 user stories, use cases and tasks to show this, green being a must, yellow a should, orange a could and red being wont. I also used story points to estimate
 the effort for each task.
-![Trello](https://imgur.com/AS88F4i)
+![Trello](https://i.imgur.com/CJStl34.png)
 [Link to my Trello](https://trello.com/b/Sc9YjKgM/qa-project)
 
 From the story points I created a burn-down chart which helps visualise the effort for a spreint and show the remaining effort this needs to be as close to the
@@ -88,6 +88,8 @@ ideal burn-out to ensure a steady work flow and reduce heavy loads at certain ti
 (Insert Burnout)
 
 ## Testing
+For testing I used a range of unit tests but also selinium
+![unit](https://i.imgur.com/L4cj1me.png)
 ```
 Codehere
 ```
