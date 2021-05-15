@@ -12,13 +12,12 @@
 
 
 
-Objective
+## Objective
 To create a CRUD application with utilisation of supporting tools,
 methodologies and technologies that encapsulate all core modules
 covered during training.
 
-Requirements
-are as follows:
+## Requirements are as follows:
 
 A Trello board (or equivalent Kanban board tech) with full expansion
 on user stories, use cases and tasks needed to complete the project.
@@ -42,14 +41,14 @@ Code fully integrated into a Version Control System using the
 Feature-Branch model which will subsequently be built through a CI
 server and deployed to a cloud-based virtual machine.
 
-Approach
+## Approach
 I have created an application which adheres to the objective.
 Create: You are able to create Films and Reviews. 
 Read: You are able to view existing films and reviews that are input onto the application.
 Update: You are able to upade the existing films on the application and also the reviews.
 Delete: You are able to delete both your own reviews and also the films entered in the application.
 
-Risk Assesment
+## Risk Assesment
 
 Prior to building the application I had completed a risk assesment for all the items which I deemed as
 a risk for the project
@@ -58,7 +57,7 @@ Upon reflection I have included a few more items which I have discovered from us
 Here is an updated version:
 (insert new Risk Assesment)
 
-Architecture
+## Architecture
 
 Initially I came up with an architecture which I believed would be fit for purpose for the application
 I build an ERD diagram to show the two databases which I am using and also the relationship between them.
@@ -67,13 +66,13 @@ Again during the building stage I realised I had not covered everything I would 
 I created a new one to reflect the changes.
 (insert new ERD)
 
-CI Pipeline
+## CI Pipeline
 CI is short for Continuous Intergration and is a software development practice. Its a runnable specification of the steps that any developer would need to
 produce a new version of a software product which is autoamated once set-up. Please find below the image which I have created which covers each the deveolpment
 and deploying of my application. I have chosen the best fit services for my application for efficent and rapid deveopment and testing.
 (Insert CI Pipeline)
 
-Project Tracking
+## Project Tracking
 
 As a DevOps engineerm, the idea is to create the application or software following the best methology and this is using an Agile method
 I have created a Trello board which features all the tasks which I had to complete in order to produce the application that meets the set requirements.
@@ -86,7 +85,7 @@ From the story points I created a burn-down chart which helps visualise the effo
 ideal burn-out to ensure a steady work flow and reduce heavy loads at certain times in the application.
 (Insert Burnout)
 
-Testing
+## Testing
 
 
-Final Application Front-End
+## Final Application Front-End
