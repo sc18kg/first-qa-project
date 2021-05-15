@@ -20,34 +20,34 @@ covered during training.
 ## Requirements
 ## are as follows:
 
-A Trello board (or equivalent Kanban board tech) with full expansion
+**A Trello board** (or equivalent Kanban board tech) with full expansion
 on user stories, use cases and tasks needed to complete the project.
 It could also provide a record of any issues or risks that you faced
 creating your project.  
-A relational database used to store data persistently for the
+**A relational database** used to store data persistently for the
 project, this database needs to have at least 2 tables in it, to
 demonstrate your understanding, you are also required to model a
 relationship.  
-Clear Documentation from a design phase describing the architecture
+**Clear Documentation** from a design phase describing the architecture
 you will use for you project as well as a detailed Risk Assessment.
-A functional CRUD application created in Python, following best
+**A functional CRUD application created in Python**, following best
 practices and design principles, that meets the requirements set on
 your Kanban Board  
-Fully designed test suites for the application you are creating, as
+**Fully designed test suites** for the application you are creating, as
 well as automated tests for validation of the application. You must
 provide high test coverage in your backend and provide consistent
 reports and evidence to support a TDD approach.  
-A functioning front-end website and integrated API's, using Flask.  
+**A functioning front-end website and integrated API's**, using Flask.  
 Code fully integrated into a Version Control System using the
 Feature-Branch model which will subsequently be built through a CI
 server and deployed to a cloud-based virtual machine.  
 
 ## Approach
 I have created an application which adheres to the objective.
-Create: You are able to create Films and Reviews.  
-Read: You are able to view existing films and reviews that are input onto the application.  
-Update: You are able to upade the existing films on the application and also the reviews.  
-Delete: You are able to delete both your own reviews and also the films entered in the application.  
+**Create:** You are able to create Films and Reviews.  
+**Read:** You are able to view existing films and reviews that are input onto the application.  
+**Update:** You are able to upade the existing films on the application and also the reviews.  
+**Delete:** You are able to delete both your own reviews and also the films entered in the application.  
 
 ## Risk Assesment
 
@@ -57,6 +57,7 @@ a risk for the project
 Upon reflection I have included a few more items which I have discovered from using various tools building the application
 Here is an updated version:
 (insert new Risk Assesment)
+[Link to my Risk Assesment](https://docs.google.com/spreadsheets/d/139uNft5K6sNDZgaGhPrtIWHvzJF40PCcAND5tNtLiuY/edit#gid=0)
 
 ## Architecture
 
@@ -80,13 +81,15 @@ I have created a Trello board which features all the tasks which I had to comple
 I have used MoSCoW techique (Must Have, Should Have, Could Have, Won't Have this time) to prioritisation the tasks for my application I have colour coded the
 user stories, use cases and tasks to show this, green being a must, yellow a should, orange a could and red being wont. I also used story points to estimate
 the effort for each task.
-(Trello Board insert)
+
+[Link to my Trello](https://trello.com/b/Sc9YjKgM/qa-project)
 
 From the story points I created a burn-down chart which helps visualise the effort for a spreint and show the remaining effort this needs to be as close to the
 ideal burn-out to ensure a steady work flow and reduce heavy loads at certain times in the application.
 (Insert Burnout)
 
 ## Testing
-
-
+```
+Codehere
+```
 ## Final Application Front-End
