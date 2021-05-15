@@ -1,23 +1,14 @@
 # Movie Review Website
-Contents
-
-Objective 
-
-Requirements
-
-Approach
-
-Risk Assesment
-
-Architecture
-
-CI Pipeline
-
-Project Tracking
-
-Testing
-
-Final Application Front-End
+* Contents
+* Objective 
+* Requirements
+* Approach
+* Risk Assesment
+* Architecture
+* CI Pipeline
+* Project Tracking
+* Testing
+* Final Application Front-End
 
 
 
