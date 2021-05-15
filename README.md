@@ -1,14 +1,14 @@
-# Movie Review Website
-* Contents
-* Objective 
-* Requirements
-* Approach
-* Risk Assesment
-* Architecture
-* CI Pipeline
-* Project Tracking
-* Testing
-* Final Application Front-End
+### Movie Review Website
+ ## Contents
+* [Objective](#objective)
+* [Requirements](#Requirements)
+* [Approach](#Approach)
+* [Risk Assesment](#Risk Assesment)
+* [Architecture](#Architecture)
+* [CI Pipeline](#CI Pipeline)
+* [Project Tracking](#Project Tracking)
+* [Testing](#Testing)
+* [Final Application - Front End](#Final Application - Front End)
 
 
 
@@ -17,7 +17,8 @@ To create a CRUD application with utilisation of supporting tools,
 methodologies and technologies that encapsulate all core modules
 covered during training.
 
-## Requirements are as follows:
+## Requirements
+## are as follows:
 
 A Trello board (or equivalent Kanban board tech) with full expansion
 on user stories, use cases and tasks needed to complete the project.
