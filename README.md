@@ -26,19 +26,23 @@ covered during training.
 on user stories, use cases and tasks needed to complete the project.
 It could also provide a record of any issues or risks that you faced
 creating your project.  
+
 **A relational database** used to store data persistently for the
 project, this database needs to have at least 2 tables in it, to
 demonstrate your understanding, you are also required to model a
 relationship.  
+
 **Clear Documentation** from a design phase describing the architecture
 you will use for you project as well as a detailed Risk Assessment.
 **A functional CRUD application created in Python**, following best
 practices and design principles, that meets the requirements set on
 your Kanban Board  
+
 **Fully designed test suites** for the application you are creating, as
 well as automated tests for validation of the application. You must
 provide high test coverage in your backend and provide consistent
 reports and evidence to support a TDD approach.  
+
 **A functioning front-end website and integrated API's**, using Flask.  
 Code fully integrated into a Version Control System using the
 Feature-Branch model which will subsequently be built through a CI
@@ -136,7 +140,7 @@ For the homepage, I have a list of films and also reviews visable even if the fi
 The film list features a breakdown of each film and its attached information, there is also both update and delete buttons which allows users to edit the submitted films and also delete them.
 ![films](https://i.imgur.com/uQNk94j.png)
 ## Add Review
-The add a review page features a drop down menu selection box which is populated with the films that have been stored in the database.
+The add a review page features a drop down menu selection box which is populated with the films that have been stored in the database.  
 ![addreview](https://i.imgur.com/s6zP1Jx.png)
 ## Update Review
 The update review page is accessible from the homepage once a review has been submitted this allows for users to update their review if they have errors or a change of mind for the review submitted.
@@ -150,3 +154,7 @@ The update film page is accessed through the film list as there is a button for 
 ## Count
 Count page returns the number of reviews currently in the database.
 ![count](https://i.imgur.com/mtkJe2O.png)
+
+## Future Improvements
+* I have a very basic count page which is open for improvement as I could make two different counts one for the number of films aswell as the reviews, I could also format the page to be more eye-catching
+* I could implement an average score for each film which is taken from the individual reviews to give an updated score which is more useful to the user.
