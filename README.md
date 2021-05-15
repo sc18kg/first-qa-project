@@ -97,7 +97,8 @@ ideal burn-out to ensure a steady work flow and reduce heavy loads at certain ti
 
 ## Continuous Intergration
 
-I have used CI as its usually paired alongside agile software development which is the method for this project. The main focus of the CI is to automate the testing process, from using a webhook I have enabled the tests which I have written to be performed every time an update is pushed to the git repository as Jenkins fetches this information and runs both the intergration and unit tests. Below I have insert the instructions that are used to input for the Jenkins to run:  
+I have used CI as its usually paired alongside agile software development which is the method for this project. The main focus of the CI is to automate the testing process, from using a webhook I have enabled the tests which I have written to be performed every time an update is pushed to the git repository as Jenkins fetches this information and runs both the intergration and unit tests. I have used Jenkins Manage Credentials option in the Security tab to set both DATABASE_URI and SECRET_KEY for extra security so the variables are not hardcoded.  
+Below I have insert the instructions that are used to input for the Jenkins to run:  
 # Jenkins Build Script
 ```
 sudo apt-get update
@@ -113,8 +114,8 @@ source venv/bin/activate
 
 pip3 install -r requirements.txt
 
-export DATABASE_URI=mysql+pymysql://root:jasper123@10.92.224.3/project_db
-export SECRET_KEY=qwertyuioplkjhgfdsazxcvbnm
+export DATABASE_URI
+export SECRET_KEY
 
 python3 -m pytest --cov=application --disable-warnings
 ```
