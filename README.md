@@ -3,12 +3,12 @@
 * [Objective](#objective)
 * [Requirements](#Requirements)
 * [Approach](#Approach)
-* [Risk Assesment](#Risk Assesment)
+* [Risk Assesment](#Risk-Assesment)
 * [Architecture](#Architecture)
-* [CI Pipeline](#CI Pipeline)
-* [Project Tracking](#Project Tracking)
+* [CI Pipeline](#CI-Pipeline)
+* [Project Tracking](#Project-Tracking)
 * [Testing](#Testing)
-* [Final Application - Front End](#Final Application - Front End)
+* [Final Application - Front End](#Final-Application--Front-End)
 
 
 
