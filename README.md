@@ -9,7 +9,8 @@
 * [Project Tracking](#Project-Tracking)
 * [Continuous Intergration](#Continuous-intergration)
 * [Testing](#Testing)
-* [Final Application - Front End](#Final-Application--Front-End)
+* [Final Application - Front End](#Final-Application---Front-End)
+* [Future Improvements](#Future-Improvements)
 
 
 
@@ -115,13 +116,19 @@ python3 -m pytest --cov=application --disable-warnings
 ```
 
 ## Testing
-#Unit Tests
+# Unit Tests
 for the unit tests, this works by testing against each function I have and using assertions checks that the function is returning the correct or expected results
 As you can see from the image below, I have reached 100% coverage meaning every function has been tested.  
-#Intergration Tests
+
+# Intergration Tests
 For the intergration tests, I used selenium which is a driver used to simulate user input. For my application, I tested adding a new film to the database
 I had selenium enter data and and clicking buttons using their xPath which was then checked for the correct input. As you can see from the tests I have passed
 all 18, this number is refering to both the Unit and Intergration tests.
 ![unit](https://i.imgur.com/L4cj1me.png)
 
 ## Final Application Front-End
+# Home
+# Film list 
+# Add Review
+# Add Film
+# Count
