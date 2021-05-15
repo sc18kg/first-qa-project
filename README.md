@@ -137,7 +137,7 @@ screenshots of each seperate page and filled in some example data to show the fu
 For the homepage, I have a list of films and also reviews visable even if the film does not currently have a review the title is shown so users are able to see the added films in the database as you can only review a film once its been created and added.
 ![home](https://i.imgur.com/xOqGv9r.png)
 ## Film list
-The film list features a breakdown of each film and its attached information, there is also both update and delete buttons which allows users to edit the submitted films and also delete them.
+The film list features a breakdown of each film and its attached information, there is also both update and delete buttons which allows users to edit the submitted films and also delete them.  
 ![films](https://i.imgur.com/uQNk94j.png)
 ## Add Review
 The add a review page features a drop down menu selection box which is populated with the films that have been stored in the database.  
