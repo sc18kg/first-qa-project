@@ -5,8 +5,8 @@
 * [Approach](#Approach)
 * [Risk Assesment](#Risk-Assesment)
 * [Architecture](#Architecture)
-* [CI Pipeline](#CI-Pipeline)
 * [Project Tracking](#Project-Tracking)
+* [CI Pipeline](#CI-Pipeline)
 * [Continuous Intergration](#Continuous-intergration)
 * [Testing](#Testing)
 * [Final Application-Front End](#Final-Application-Front-End)
@@ -75,21 +75,22 @@ Again during the building stage I realised I had not covered everything I would 
 I created a new one to reflect the changes I had made which was to just feature more fields but kept the relationship the same.  
 ![newERD](https://i.imgur.com/bvU1Yih.jpg)
 
-## CI Pipeline
-CI is short for Continuous Intergration and is a software development practice. Its a runnable specification of the steps that any developer would need to
-produce a new version of a software product which is autoamated once set-up. Please find below the image which I have created which covers each the deveolpment
-and deploying of my application. I have chosen the best fit services for my application for efficent and rapid deveopment and testing.
-![CIPipeline](https://i.imgur.com/zFJJngX.jpg)
-
 ## Project Tracking
 
 As a DevOps engineerm, the idea is to create the application or software following the best methology and this is using an Agile method
 I have created a Trello board which features all the tasks which I had to complete in order to produce the application that meets the set requirements.
 I have used MoSCoW techique (Must Have, Should Have, Could Have, Won't Have this time) to prioritisation the tasks for my application I have colour coded the
 user stories, use cases and tasks to show this, green being a must, yellow a should, orange a could and red being wont. I also used story points to estimate
-the effort for each task.
+the effort for each task.  
 ![Trello](https://i.imgur.com/CJStl34.png)
 [Link to my Trello](https://trello.com/b/Sc9YjKgM/qa-project)
+
+## CI Pipeline
+CI is short for Continuous Intergration and is a software development practice. Its a runnable specification of the steps that any developer would need to
+produce a new version of a software product which is autoamated once set-up. Please find below the image which I have created which covers each the deveolpment
+and deploying of my application. I have chosen the best fit services for my application for efficent and rapid deveopment and testing.
+![CIPipeline](https://i.imgur.com/zFJJngX.jpg)
+
 
 ## Continuous Intergration
 
