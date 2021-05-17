@@ -19,8 +19,7 @@ To create a CRUD application with utilisation of supporting tools,
 methodologies and technologies that encapsulate all core modules
 covered during training.
 
-## Requirements
-## are as follows:
+## Requirements are as follows:
 
 **A Trello board** (or equivalent Kanban board tech) with full expansion
 on user stories, use cases and tasks needed to complete the project.
@@ -77,7 +76,7 @@ I created a new one to reflect the changes I had made which was to just feature 
 
 ## Project Tracking
 
-As a DevOps engineerm, the idea is to create the application or software following the best methology and this is using an Agile method
+As a DevOps engineer, the idea is to create the application or software following the best methology and this is using an Agile method
 I have created a Trello board which features all the tasks which I had to complete in order to produce the application that meets the set requirements.
 I have used MoSCoW techique (Must Have, Should Have, Could Have, Won't Have this time) to prioritisation the tasks for my application I have colour coded the
 user stories, use cases and tasks to show this, green being a must, yellow a should, orange a could and red being wont. I also used story points to estimate
