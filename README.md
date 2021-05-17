@@ -19,7 +19,7 @@ To create a CRUD application with utilisation of supporting tools,
 methodologies and technologies that encapsulate all core modules
 covered during training.
 
-## Requirements are as follows:
+## Requirements
 
 **A Trello board** (or equivalent Kanban board tech) with full expansion
 on user stories, use cases and tasks needed to complete the project.
