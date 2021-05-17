@@ -91,10 +91,6 @@ the effort for each task.
 ![Trello](https://i.imgur.com/CJStl34.png)
 [Link to my Trello](https://trello.com/b/Sc9YjKgM/qa-project)
 
-From the story points I created a burn-down chart which helps visualise the effort for a spreint and show the remaining effort this needs to be as close to the
-ideal burn-out to ensure a steady work flow and reduce heavy loads at certain times in the application.
-(Insert Burnout)
-
 ## Continuous Intergration
 
 I have used CI as its usually paired alongside agile software development which is the method for this project. The main focus of the CI is to automate the testing process, from using a webhook I have enabled the tests which I have written to be performed every time an update is pushed to the git repository as Jenkins fetches this information and runs both the intergration and unit tests. I have used Jenkins Manage Credentials option in the Security tab to set both DATABASE_URI and SECRET_KEY for extra security so the variables are not hardcoded.  
@@ -135,7 +131,7 @@ all 18, this number is refering to both the Unit and Intergration tests.
 I wanted to keep a consistent feel throughout the whole website so this means a stationary menu bar is situated under the page title. I have included
 screenshots of each seperate page and filled in some example data to show the functionality. I have kept the layout simple and clear to avoid any confusion when submitting data.
 ## Home
-For the homepage, I have a list of films and also reviews visable even if the film does not currently have a review the title is shown so users are able to see the added films in the database as you can only review a film once its been created and added.
+For the homepage, I have a list of films and also reviews visable even if the film does not currently have a review the title is shown so users are able to see the added films in the database as you can only review a film once its been created and added.  
 ![home](https://i.imgur.com/xOqGv9r.png)
 ## Film list
 The film list features a breakdown of each film and its attached information, there is also both update and delete buttons which allows users to edit the submitted films and also delete them.  
@@ -147,7 +143,7 @@ The add a review page features a drop down menu selection box which is populated
 The update review page is accessible from the homepage once a review has been submitted this allows for users to update their review if they have errors or a change of mind for the review submitted.
 ![upreview](https://i.imgur.com/cHPd0vz.png)
 ## Add Film
-The add film page is accessible from the menu bar, This is required as there would be no reviews if there were no films. This page also features a selection box for the different age ratings for the films to stop incorrect data being submitted.
+The add film page is accessible from the menu bar, This is required as there would be no reviews if there were no films. This page also features a selection box for the different age ratings for the films to stop incorrect data being submitted.  
 ![addfilm](https://i.imgur.com/UCN6kEg.png)
 ## Update Film
 The update film page is accessed through the film list as there is a button for updating this information, It shows the previously entered information at the top so you are aware what was written prior.
