@@ -85,15 +85,14 @@ the effort for each task.
 [Link to my Trello](https://trello.com/b/Sc9YjKgM/qa-project)
 
 ## CI Pipeline
-CI is short for Continuous Intergration and is a software development practice. Its a runnable specification of the steps that any developer would need to
-produce a new version of a software product which is autoamated once set-up. Please find below the image which I have created which covers each the deveolpment
+CI is short for Continuous Intergration and is a software development practice. Please find below the image which I have created which covers each the development
 and deploying of my application. I have chosen the best fit services for my application for efficent and rapid deveopment and testing.
 ![CIPipeline](https://i.imgur.com/zFJJngX.jpg)
 
 
 ## Continuous Intergration
 
-I have used CI as its usually paired alongside agile software development which is the method for this project. The main focus of the CI is to automate the testing process, from using a webhook I have enabled the tests which I have written to be performed every time an update is pushed to the git repository as Jenkins fetches this information and runs both the intergration and unit tests. I have used Jenkins Manage Credentials option in the Security tab to set both DATABASE_URI and SECRET_KEY for extra security so the variables are not hardcoded.  
+I have used CI as its usually paired alongside agile software development which is the method for this project. The main focus of the CI is to automate the testing process, from using a webhook I have enabled the tests which I have written to be performed every time an update is pushed to the git repository as Jenkins fetches this information and runs both the intergration and unit tests. I have used Jenkins Manage Credentials option in the Security tab to set both DATABASE_URI and SECRET_KEY for extra security so the variables are not hardcoded.This specification of the steps would allow any developer to produce a new version of a software product which is automated once set-up  
 Below I have insert the instructions that are used to input for the Jenkins to run:  
 # Jenkins Build Script
 ```
